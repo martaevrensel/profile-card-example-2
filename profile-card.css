@@ -1,0 +1,165 @@
+/* CSS reset */
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+/* Positioning */
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Heebo', sans-serif;
+    color: rgba(0,0,0,.8);
+    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url('assets/background.jpeg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.head {
+    display: none;
+}
+
+.profile-card {
+    background-color: rgba(255, 253, 253, 0.689);
+    border-radius: 4px;
+    width: 380px;
+    max-width: calc(100vw - 10px);
+}
+
+
+.about {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 3%;
+    border-top: 1px solid rgba(18, 152, 141, 0.8);
+}
+
+h1 {
+    font-size: 20px;
+    padding: 3% 10%;
+}
+
+
+p {
+    font-size: 12px;
+}
+
+img {
+    width: 200px;
+    height: 280px;
+    border-radius: 4px;
+    padding: 1px;
+    background-color: #666;
+    transition: all 0.5s ease-in-out;
+    filter: grayscale(50%);
+}
+
+img:hover {
+    transform: scale(1.1);
+    filter: grayscale(20%);
+}
+
+.profile-image {
+    margin-left:-20px;
+}
+
+.fa {
+    color: rgba(18, 152, 141, 0.8);
+    transition: all 0.5s ease-in-out;
+    filter: grayscale(50%);
+    padding: 3px;
+}
+
+.fa:hover {
+    transform: scale(1.1);
+    color: #dc143c;
+}
+
+/* Contact links */
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    padding: 1%;
+} 
+
+.links {
+    margin-top: 3%;
+}
+
+.button {
+    background-color: rgba(18, 152, 141, 0.8);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px 2px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .profile-image {
+        display: none;
+    }
+
+    .head {
+        display: flex;
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 3%;
+        justify-content: center;
+    }
+ 
+    img {
+        width: 200px;
+        height: 280px;
+        border-radius: 4px;
+        padding: 1px;
+        background-color: #666;
+        transition: all 0.5s ease-in-out;
+        filter: grayscale(50%);
+    }
+    
+    img:hover {
+        transform: scale(1.1);
+        filter: grayscale(20%);
+    }
+    
+    .profile-image-media {
+        margin-top: -60px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .headline {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 323px) {
+    li {
+        padding: 0px;
+    }
+    
+    .button {
+        margin: 0px;
+     }
+}
